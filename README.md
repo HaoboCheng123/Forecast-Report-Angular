@@ -1,3 +1,1 @@
-# angular-ivy-blorgd
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-blorgd)
+Forecast Visualization Board using angular framework
