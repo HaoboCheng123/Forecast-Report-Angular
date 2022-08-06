@@ -1,0 +1,39 @@
+<div class="p-3 text-white white-to-black">
+  <hello></hello>
+  <div class="container" id="chart_table_display">
+    <data-tabular-display
+      #datepicker1
+      date="{{ date }}"
+      (button_status)="CheckButtonStatus($event)"
+    ></data-tabular-display>
+  </div>
+  <hr />
+  <div class="container" id="date-picker">
+    <div class="d-flex justify-content-evenly">
+      <datepicker (event)="receiveMessage($event)"></datepicker>
+      <div *ngIf="button_status; then button_block; else button_disabled"></div>
+    </div>
+
+    <ng-template #button_block>
+      <button
+        style="margin-top:7px; height:40px;background-color: #4682b4; border:none"
+        class="btn btn-primary"
+        (click)="datepicker1.refreshChart()"
+      >
+        Check!
+      </button>
+    </ng-template>
+    <ng-template #button_disabled>
+      <button
+        disabled
+        style="margin-top:7px;height:40px;background-color: #383b3f; border:none"
+        class="btn btn-primary"
+        (click)="datepicker1.refreshChart()"
+      >
+        Check!
+      </button></ng-template
+    >
+  </div>
+</div>
+
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>

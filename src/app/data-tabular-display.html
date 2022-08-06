@@ -1,0 +1,23 @@
+<div class="container py-3">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [(update)]="updateFlag"
+        [options]="chartOptions"
+      ></highcharts-chart>
+    </div>
+  </div>
+</div>
+
+<hr class="divider" />
+<h4 class="d-flex justify-content-center">Forecast Information</h4>
+<div class="d-flex justify-content-center">
+  <ag-grid-angular
+    style="width: 1043px; height: 300px; border-radius: 20px"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular>
+</div>

@@ -1,0 +1,68 @@
+p {
+  font-family: Lato;
+}
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: 'Kanit', sans-serif;
+}
+
+.white-to-black {
+  background-color: #212529;
+  animation: color-change 1.5s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: small;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  40% {
+    background-color: rgb(255, 255, 255);
+  }
+  100% {
+    background-color: #212529;
+  }
+}

@@ -1,0 +1,14 @@
+/* Add application styles & imports to this file! */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400&family=Montserrat:wght@300&family=Oswald&display=swap');
+
+/* @import '~@angular/material/core/theming/prebuilt/deeppurple-amber';
+
+@import '~angular-material-datepicker/src/datepicker/calendar.component.scss';
+
+@include calendar-theme($theme); */
+/* 
+@import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css'; */
